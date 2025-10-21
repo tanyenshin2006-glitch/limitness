@@ -1,26 +1,111 @@
 @import "tailwindcss";
+@plugin "tailwindcss-animate";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Dark mode variant driven by .dark on html/body */
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Brand + base palette (usable as bg-brand, text-brand, etc.) */
+  --color-brand: #FFE900;
+
+  /* Primary surface tokens */
+  --color-background: #0A0A0A;
+  --color-foreground: #EAEAEA;
+
+  /* Foreground tiers */
+  --color-foreground-secondary: #9CA3AF;
+  --color-foreground-tertiary: #6B7280;
+
+  /* Button hover */
+  --color-brand-hover: #E6D000;
+
+
+  /* Fonts → generate font-heading / font-body utilities */
+  --font-heading: "Neue Machina", "League Spartan", sans-serif;
+  --font-body: "Geist Sans", "Inter", sans-serif;
+
+  /* Radii (rounded-md, etc.) */
+  --radius-md: 10px;
+
+  /* If you want global default radius used by rounded-[var(--radius)] */
+  --radius: 0.625rem;
+
+  /* Map the rest of your color tokens with the `color-` prefix */
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.145 0 0);
+
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.145 0 0);
+
+  --color-primary: oklch(0.205 0 0);
+  --color-primary-foreground: oklch(0.985 0 0);
+
+  --color-secondary: oklch(0.97 0 0);
+  --color-secondary-foreground: oklch(0.205 0 0);
+
+  --color-muted: oklch(0.97 0 0);
+  --color-muted-foreground: oklch(0.556 0 0);
+
+  --color-accent: oklch(0.97 0 0);
+  --color-accent-foreground: oklch(0.205 0 0);
+
+  --color-destructive: oklch(0.577 0.245 27.325);
+
+  --color-border: oklch(0.922 0 0);
+  --color-input: oklch(0.922 0 0);
+  --color-ring: oklch(0.708 0 0);
+
+  /* Charts */
+  --color-chart-1: oklch(0.646 0.222 41.116);
+  --color-chart-2: oklch(0.6 0.118 184.704);
+  --color-chart-3: oklch(0.398 0.07 227.392);
+  --color-chart-4: oklch(0.828 0.189 84.429);
+  --color-chart-5: oklch(0.769 0.188 70.08);
+
+  /* Sidebar */
+  --color-sidebar: oklch(0.985 0 0);
+  --color-sidebar-foreground: oklch(0.145 0 0);
+  --color-sidebar-primary: oklch(0.205 0 0);
+  --color-sidebar-primary-foreground: oklch(0.985 0 0);
+  --color-sidebar-accent: oklch(0.97 0 0);
+  --color-sidebar-accent-foreground: oklch(0.205 0 0);
+  --color-sidebar-border: oklch(0.922 0 0);
+  --color-sidebar-ring: oklch(0.708 0 0);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+/* Effects */
+.aura-brand {
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 233, 0, 0.18) 0%,
+    rgba(255, 233, 0, 0.08) 35%,
+    transparent 65%
+  );
+}
+
+.crt-scanlines {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.08) 0px,
+    rgba(255,255,255,0.08) 1px,
+    transparent 2px,
+    transparent 3px
+  );
+  filter: blur(0.2px);
+}
+
+/* soft vignette edge darkening */
+.crt-vignette {
+  background: radial-gradient(circle at center, transparent 55%, rgba(0,0,0,0.65) 100%);
+}
+
+/* Base resets and token usage */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-background text-foreground font-body;
+  }
 }
