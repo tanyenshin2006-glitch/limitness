@@ -13,7 +13,7 @@ export default function Page() {
     <main className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground relative overflow-hidden">
 
       {/*Background Sound*/}
-      <BackgroundHum volume={0.2}/>
+      <BackgroundHum volume={0.2} aria-hidden/>
 
       {/* Faint vignette for cinematic depth */}
       <div
@@ -39,7 +39,7 @@ export default function Page() {
               idleMax={2400}
               rgbOpacity={0.5}
               majorChance={0.1}
-              className="text-6xl font-extrabold font-heading"
+              className="text-7xl font-heading"
             >
               LIMITNESS
             </GlitchTextHardIdle>
@@ -52,13 +52,14 @@ export default function Page() {
               className="w-60 text-brand mx-3 drop-shadow-[0_0_6px_rgba(255,233,0,0.8)]"
               duration={1.2}
               delay={0.6} // starts slightly after LIMITNESS glitch finishes
+              aria-hidden="true"
             />
             </div>
 
             {/* see yourself fade in */}
             <div className="justify-self-start">
             <FadeIn delay={0} duration={0.6} y={10}>
-              <span className="text-foreground tracking-wide]">see yourself</span>
+              <span className="text-foreground font-body tracking-wide] select-none">see yourself</span>
             </FadeIn>
             </div>
 
@@ -66,7 +67,7 @@ export default function Page() {
 
       {/* Enter Protocol button */}
       <FadeIn delay={1.9} duration={0.4} y={20}>
-        <div className="mt-10 justify-center">
+        <div className="mt-10 justify-center select-none ">
           <EnterProtocolButton />
         </div>
       </FadeIn>

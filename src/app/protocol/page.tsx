@@ -9,7 +9,7 @@ export default function ProtocolSoon() {
     const [volume, setVolume] = useState(0)
 
     useEffect(() => {
-        let start = 0
+        const start = 0
         const end = 0.4
         const duration = 2000 // 2 seconds
         const steps = 40
@@ -39,16 +39,16 @@ export default function ProtocolSoon() {
                 className="absolute inset-0 bg-[url('/grain.png')] opacity-[0.06] mix-blend-overlay pointer-events-none"
             />
 
-            <BackgroundHum volume={0.4} />
+            <BackgroundHum volume={volume} />
 
                 <FadeIn delay={0.1} duration={0.8} y={20}>
                     <div className="text-center">
 
-                        <div className="text-brand text-5xl font-extrabold tracking-widest font-body">
+                        <div className="text-brand text-5xl font-extrabold tracking-[0.12em] font-heading select-none">
                             ENTRY SEQUENCE LOCKED
                         </div>
 
-                        <div className="mt-3 text-sm text-gray-400 tracking-wide font-heading">
+                        <div className="mt-3 text-[0.9rem] md:text-base text-foreground-secondary tracking-[0.06em] font-body select-none">
                             standby for synchronization signal
                         </div>
 

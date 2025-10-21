@@ -19,10 +19,10 @@
   /* Button hover */
   --color-brand-hover: #E6D000;
 
-
   /* Fonts → generate font-heading / font-body utilities */
-  --font-heading: "Neue Machina", "League Spartan", sans-serif;
-  --font-body: "Geist Sans", "Inter", sans-serif;
+  --font-heading: var(--font-heading), "League Spartan", sans-serif;
+  --font-body: var(--font-body), var(--font-body-fallback), sans-serif;
+  --font-mono: var(--font-mono), monospace;
 
   /* Radii (rounded-md, etc.) */
   --radius-md: 10px;

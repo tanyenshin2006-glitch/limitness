@@ -16,7 +16,7 @@ type GlitchProps = {
 
 export function GlitchTextHardIdle({
   children,
-  className = "text-6xl md:text-7xl font-extrabold tracking-tight text-brand",
+  className = "text-7xl md:text-8xl font-extrabold tracking-tight font-heading text-brand",
   rgbOpacity = 0.5,
   burstMs = 220,
   idleMin = 5000,
