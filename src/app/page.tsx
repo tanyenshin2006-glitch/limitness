@@ -28,7 +28,7 @@ export default function Page() {
       />
 
       {/* Title */}
-        <h1 className="grid grid-cols-3 items-center text-5xl md:text-6xl font-extrabold tracking-tight text-center gap-3">
+        <h1 className="grid grid-cols-3 items-center text-5xl md:text-6xl font-extrabold tracking-tight text-center gap-4">
 
             {/* LIMITNESS glitch in */}
              <div className="justify-self-end">
@@ -49,7 +49,7 @@ export default function Page() {
             {/* Slash charge in */}
             <div className="justify-self-center">
             <SlashLoad
-              className=" w-12 text-brand mx-3 drop-shadow-[0_0_6px_rgba(255,233,0,0.8)]"
+              className="w-60 text-brand mx-3 drop-shadow-[0_0_6px_rgba(255,233,0,0.8)]"
               duration={1.2}
               delay={0.6} // starts slightly after LIMITNESS glitch finishes
             />

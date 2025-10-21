@@ -21,7 +21,7 @@ export function EnterProtocolButton({
   href = "/protocol",
   fadeDelay = 1.9,       // starts right after slash completes
   fadeDuration = 0.4,
-  breatheDuration = 5,
+  breatheDuration = 7,
   breatheScale = 1.05,   // 5% pulse
   label = "ENTER PROTOCOL",
 }: Props) {

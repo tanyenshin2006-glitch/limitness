@@ -2,19 +2,20 @@
 import { motion } from "framer-motion"
 
 export function SlashLoad({
-  className = "h-10 w-10 text-brand",
+  className = "h-10 w-10",
   duration = 0.9,
   delay = 0.1,
   color = "#FFE900",
 }: {
   className?: string
-  strokeWidth?: number
   duration?: number
   delay?: number
   color?: string
 }) {
-  const len = 96         // effective visual path length
-  const strokeWidth = len / 6  // 1:6 ratio → 16
+  const len = 60                // diagonal length
+  const strokeWidth = 8.5       // thinner: 1 : 7 ratio
+  const x1 = 32, y1 = 74
+  const x2 = 68, y2 = 26
 
   return (
     <motion.svg
@@ -24,7 +25,7 @@ export function SlashLoad({
       role="presentation"
     >
       <motion.line
-        x1="26" y1="82" x2="74" y2="18"
+        x1={x1} y1={y1} x2={x2} y2={y2}
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="butt"
