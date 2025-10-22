@@ -92,11 +92,15 @@ export function GlitchTextHardIdle({
         red.start({
           x: [0, -12, 12, 0],
           opacity: [0, 0.9, 0],
+          scale: [1, 1.03, 1],
+          y: [0, -0.6, 0.4, 0],
           transition: { duration: d * 1.6, ease: "linear" },
         }),
         cyan.start({
           x: [0, 12, -12, 0],
           opacity: [0, 0.9, 0],
+          scale: [1, 1.03, 1],
+          y: [0, -0.6, 0.4, 0],
           transition: { duration: d * 1.6, ease: "linear" },
         }),
       ])
@@ -131,7 +135,7 @@ export function GlitchTextHardIdle({
   return (
     <span className="relative inline-block select-none">
       <motion.span
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0, scale: 1 }}
         animate={base}
         className={className + " will-change-transform will-change-opacity"}
         style={{ color: "var(--color-brand)" }}
@@ -140,9 +144,9 @@ export function GlitchTextHardIdle({
       </motion.span>
 
       <motion.span
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0, scale: 1 }}
         animate={red}
-        className="absolute inset-0 pointer-events-none mix-blend-screen will-change-transform will-change-opacity"
+        className={className +" absolute inset-0 pointer-events-none mix-blend-screen will-change-transform will-change-opacity"}
         style={{ color: "rgb(239,68,68)" }}
         aria-hidden
       >
@@ -150,9 +154,9 @@ export function GlitchTextHardIdle({
       </motion.span>
 
       <motion.span
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0, scale: 1  }}
         animate={cyan}
-        className="absolute inset-0 pointer-events-none mix-blend-screen will-change-transform will-change-opacity"
+        className={className + " absolute inset-0 pointer-events-none mix-blend-screen will-change-transform will-change-opacity"}
         style={{ color: "rgb(34,211,238)" }}
         aria-hidden
       >
