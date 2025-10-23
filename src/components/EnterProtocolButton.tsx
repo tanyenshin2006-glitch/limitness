@@ -114,7 +114,8 @@ export function EnterProtocolButton({
         aria-label={label}
         className="
           cursor-pointer bg-brand text-black font-semibold rounded-md
-          px-2 py-[0.15rem] sm:px-4 sm:py-1.5 md:px-6 md:py-2 
+          px-4.5 py-[0.25rem] text-[13.5px] 
+          sm:px-4 sm:py-1.5 md:px-6 md:py-2 
           min-h-[38px] sm:min-h-0
           hover:bg-brand-hover focus-visible:outline-none
           focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand
@@ -122,7 +123,7 @@ export function EnterProtocolButton({
         "
       >
         <motion.span
-          className="!text-[11.5px] sm:!text-sm md:!text-base"   // <-- force label size
+          className="!text-[13px] sm:!text-[14px] md:!text-[15px]"   // <-- force label size
           style={{ scale: inverse, display: "inline-block" }}
         >
           {label}
