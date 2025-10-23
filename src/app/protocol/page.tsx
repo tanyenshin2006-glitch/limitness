@@ -27,7 +27,7 @@ export default function ProtocolSoon() {
     }, [])
 
     return(
-        <main className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground relative overflow-hidden">
+        <main className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground relative overflow-hidden translate-y-[-6vh] sm:translate-y-0">
             
             <div
                 aria-hidden="true"

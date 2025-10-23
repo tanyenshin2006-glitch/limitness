@@ -8,7 +8,7 @@ import BackgroundHum from "@/components/BackgroundHum"
 
 export default function Page() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground relative overflow-hidden">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground relative overflow-hidden translate-y-[-6vh] sm:translate-y-0">
       
       {/* Background Sound */}
       <BackgroundHum volume={0.2} aria-hidden />
