@@ -44,11 +44,11 @@ export default function ProtocolSoon() {
                 <FadeIn delay={0.1} duration={0.8} y={20}>
                     <div className="text-center">
 
-                        <div className="text-brand text-5xl font-extrabold tracking-[0.12em] font-heading select-none">
+                        <div className="text-brand text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-extrabold tracking-[0.12em] font-heading select-none">
                             ENTRY SEQUENCE LOCKED
                         </div>
 
-                        <div className="mt-3 text-[0.9rem] md:text-base text-foreground-secondary tracking-[0.06em] font-body select-none">
+                        <div className="mt-3 text-sm sm:text-base md:text-base lg:text-base xl:text-base text-foreground-secondary tracking-[0.06em] font-body select-none animate-pulse opacity-90">
                             standby for synchronization signal
                         </div>
 

@@ -106,12 +106,24 @@ export function EnterProtocolButton({
         onClick={handleClick}
         disabled={!mounted}
         aria-label={label}
-        className="cursor-pointer bg-brand text-black font-semibold rounded-md px-6 py-2 hover:bg-brand-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand active:scale-[0.99] font-mono"
+        className="
+          cursor-pointer bg-brand text-black font-semibold font-mono
+          rounded-md
+          px-4 py-2 sm:px-6 sm:py-3
+          w-auto max-w-[80vw]
+          hover:bg-brand-hover
+          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand
+          active:scale-[0.99]
+          transition-all duration-200 ease-out
+        "
       >
-        <motion.span style={{ scale: inverse, display: "inline-block" }}>
+        <motion.span
+          className="block !text-sm sm:!text-base"   
+          style={{ scale: inverse }}
+        >
           {label}
         </motion.span>
       </MotionButton>
     </motion.div>
   )
-}
+}   
