@@ -46,8 +46,14 @@ export function EnterProtocolButton({
 
   const boxShadow = useTransform(scale, (v) => {
     const progress = Math.max(0, Math.min(1, (v - 1) / (breatheScale - 1 || 0.0001)))
-    const glow = 12 + 22 * progress
-    const alpha = 0.22 + 0.22 * progress
+    
+    // ✅ detect mobile screen
+    const isMobile = typeof window !== "undefined" && window.innerWidth < 640
+
+    // ✅ adjust glow + transparency
+    const glow = isMobile ? 8 + 14 * progress : 12 + 22 * progress
+    const alpha = isMobile ? 0.18 + 0.18 * progress : 0.22 + 0.22 * progress
+
     return `0 0 ${glow}px rgba(255,233,0,${alpha})`
   })
 
@@ -99,7 +105,7 @@ export function EnterProtocolButton({
     <motion.div
       id="enter-protocol-wrap"
       style={{ scale, boxShadow, transformOrigin: "center", opacity: 0 }}
-      className="inline-block rounded-md will-change-transform will-change-opacity"
+      className="inline-block rounded-md will-change-transform will-change-opacity scale-90 sm:scale-100"
     >
       <MotionButton
         type="button"
@@ -107,19 +113,17 @@ export function EnterProtocolButton({
         disabled={!mounted}
         aria-label={label}
         className="
-          cursor-pointer bg-brand text-black font-semibold font-mono
-          rounded-md
-          px-4 py-2 sm:px-6 sm:py-3
-          w-auto max-w-[80vw]
-          hover:bg-brand-hover
-          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand
-          active:scale-[0.99]
-          transition-all duration-200 ease-out
+          cursor-pointer bg-brand text-black font-semibold rounded-md
+          px-2 py-[0.15rem] sm:px-4 sm:py-1.5 md:px-6 md:py-2 
+          min-h-[38px] sm:min-h-0
+          hover:bg-brand-hover focus-visible:outline-none
+          focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand
+          active:scale-[0.99] font-mono transition-all
         "
       >
         <motion.span
-          className="block !text-sm sm:!text-base"   
-          style={{ scale: inverse }}
+          className="!text-[11.5px] sm:!text-sm md:!text-base"   // <-- force label size
+          style={{ scale: inverse, display: "inline-block" }}
         >
           {label}
         </motion.span>
