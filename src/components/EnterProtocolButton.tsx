@@ -119,7 +119,9 @@ export function EnterProtocolButton({
           min-h-[38px] sm:min-h-0
           hover:bg-brand-hover focus-visible:outline-none
           focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand
-          active:scale-[0.99] font-mono transition-all
+          active:scale-[0.99] font-mono 
+          transition-all duration-[600ms] ease-[cubic-bezier(0.4,0,0.2,1)]
+          hover:shadow-[0_0_20px_rgba(255,233,0,0.5)]
         "
       >
         <motion.span
