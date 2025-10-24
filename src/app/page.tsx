@@ -28,7 +28,7 @@ export default function Page() {
         <h1 className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-baseline md:items-center gap-3 lg:gap-6 xl:gap-10 2xl:gap-14 text-center md:text-left font-extrabold tracking-tight">
 
           {/* LIMITNESS glitch */}
-          <div className="md:justify-self-end">
+          <div className="md:justify-self-end -translate-y-[30px] ">
             <GlitchTextHardIdle
               bootDelayMs={900}
               burstMs={220}
@@ -55,7 +55,7 @@ export default function Page() {
           {/* See Yourself */}
           <div className="md:justify-self-start">
             <FadeIn delay={0} duration={0.6} y={10}>
-              <span className="block text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-foreground font-body tracking-wide select-none leading-tight max-w-[95vw]">
+              <span className="block text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-foreground font-body tracking-wide select-none leading-tight max-w-[95vw]  translate-y-[30px]">
                 see yourself
               </span>
             </FadeIn>
