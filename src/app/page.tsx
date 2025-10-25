@@ -64,7 +64,7 @@ export default function Page() {
 
         {/* Button */}
         <FadeIn delay={1.9} duration={0.4} y={20}>
-          <div className="sm:mt-8 mt-10 flex justify-center select-none px-4 sm:px-0">
+          <div className="sm:mt-8 mt-10 flex justify-center select-none px-4 sm:px-0 translate-y-[40px] sm:translate-y-[20px] md:translate-y-0">
               <EnterProtocolButton />
           </div>
         </FadeIn>
