@@ -5,6 +5,7 @@ import { GlitchTextHardIdle } from "@/components/motion/GlitchTextCRT"
 import { EnterProtocolButton } from "@/components/EnterProtocolButton"
 import { SlashLoad } from "@/components/motion/SlashLoad"
 import BackgroundHum from "@/components/BackgroundHum"
+import { LimitnessSpotlight } from "@/components/LimitnessSpotlight";
 
 export default function Page() {
   return (
@@ -12,6 +13,8 @@ export default function Page() {
       
       {/* Background Sound */}
       <BackgroundHum volume={0.2} aria-hidden />
+
+      <LimitnessSpotlight opacity={0.03} />
 
       {/* Cinematic layers */}
       <div
