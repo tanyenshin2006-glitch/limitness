@@ -28,7 +28,7 @@ export default function Page() {
 
       {/* Content container with safe margins */}
       <div className="w-full max-w-screen-xl px-4 sm:px-6">
-        <h1 className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-baseline md:items-center gap-3 lg:gap-6 xl:gap-10 2xl:gap-14 text-center md:text-left font-extrabold tracking-tight">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-baseline md:items-center gap-3 lg:gap-6 xl:gap-10 2xl:gap-14 text-center md:text-left font-extrabold tracking-tight">
 
           {/* LIMITNESS glitch */}
           <div className="md:justify-self-end -translate-y-[30px] ">
@@ -63,7 +63,7 @@ export default function Page() {
               </span>
             </FadeIn>
           </div>
-        </h1>
+        </div>
 
         {/* Button */}
         <FadeIn delay={1.9} duration={0.4} y={20}>
