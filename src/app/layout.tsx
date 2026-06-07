@@ -3,9 +3,10 @@ import "./globals.css";
 import { 
   League_Spartan, 
   Geist,
-  Geist_Mono,
-  Inter,
+  DM_Mono
 } from "next/font/google"
+import NavigationMenu from "@/components/NavigationMenu"
+import BackgroundHum from "@/components/BackgroundHum"
 
 const leagueSpartan = League_Spartan({
   subsets: ["latin"],
@@ -20,23 +21,20 @@ const geist = Geist({
   display: "swap",
 })
 
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  display: "swap",
-})
-
-const inter = Inter({
+const dmMono = DM_Mono({
   subsets: ["latin"],
   weight: ["400", "500"],
-  variable: "--font-body-fallback",
-  display:"swap"
+  variable: "--font-mono",
+  display: "swap",
 })
 
 export const metadata: Metadata = {
   title: {
     default: "LIMITNESS",
     template: "%s | LIMITNESS",
+  },
+  alternates: {
+    canonical: 'https://www.limitness.co',
   },
   description: "The protocol begins when you see yourself.",
   keywords: [
@@ -85,16 +83,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`
         ${leagueSpartan.variable} 
         ${geist.variable} 
-        ${geistMono.variable} 
-        ${inter.variable}
+        ${dmMono.variable} 
       `}
     > 
       <head>
-        <meta name="theme-color" content="#0A0A0A" />
+        <meta name="theme-color" content="#000000" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/icon.png" />
       </head>
-      <body className="bg-background text-foreground">{children}</body>
+      <body className="bg-background text-foreground">       
+        <NavigationMenu />
+         <BackgroundHum volume={0.2} aria-hidden />
+        {children}
+      </body>
     </html>
   )
 }
