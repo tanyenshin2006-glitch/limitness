@@ -21,7 +21,7 @@
 
   /* Fonts → generate font-heading / font-body utilities */
   --font-heading: var(--font-heading), "League Spartan", sans-serif;
-  --font-body: var(--font-body), var(--font-body-fallback), sans-serif;
+  --font-body: var(--font-body), sans-serif;
   --font-mono: var(--font-mono), monospace;
 
   /* Radii (rounded-md, etc.) */
@@ -108,4 +108,18 @@
   body {
     @apply bg-background text-foreground font-body;
   }
+}
+
+@keyframes intro-title {
+  0%      { opacity: 0; }
+  31.25%  { opacity: 1; }
+  81.25%  { opacity: 1; }
+  100%    { opacity: 0; }
+}
+
+@keyframes intro-sub {
+  0%   { opacity: 0; }
+  25%  { opacity: 1; }
+  75%  { opacity: 1; }
+  100% { opacity: 0; }
 }
