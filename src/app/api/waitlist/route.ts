@@ -1,4 +1,5 @@
 import { Resend } from 'resend'
+import { waitlistConfirmationEmail } from '@/lib/emailTemplates'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -10,7 +11,7 @@ try {
         from: 'LIMITNESS <hello@limitness.co>',
         to: email,
         subject: 'You are on the waitlist.',
-        html: `<p>Hi ${name}, we received your application.</p>`
+        html: waitlistConfirmationEmail(name)
     })
     console.log('User email:', d1, e1)
 
