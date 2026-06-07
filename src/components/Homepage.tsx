@@ -18,9 +18,6 @@ export default function Homepage() {
           JOIN WAITLIST
         </button>
       </Link>
-      <p className="font-body mt-4 text-[10px] md:text-sm text-white/30 tracking-[0.15em]">
-          See yourself.
-      </p>
     </section>
   )
 }
