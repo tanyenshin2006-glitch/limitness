@@ -39,10 +39,10 @@ export default function Homepage() {
         <p className="font-mono text-xl md:text-3xl text-white tracking-[0.2em]">
             CONTROLLED BATCH 01
         </p>
-        <p className="font-body mt-6 text-xs md:text-base text-white/60 tracking-[0.15em]">
-          A structured recovery product, released in limited batches.
+        <p className="font-body mt-6 text-xs md:text-base text-white/60 tracking-[0.15em] text-center">
+          A structured muscle recovery product, released in limited batches.
         </p>
-        <p className="font-body mt-6 text-xs md:text-base text-white/60 tracking-[0.15em]">
+        <p className="font-body mt-6 text-xs md:text-base text-white/60 tracking-[0.15em] text-center">
           The batch is currently in controlled development.
         </p>
 
