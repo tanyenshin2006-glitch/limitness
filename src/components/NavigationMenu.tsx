@@ -18,7 +18,7 @@ export default function NavigationMenu() {
 
     return(
         <>
-            <nav className="fixed top-0 w-full px-6 md:px-20 py-10 flex justify-between items-center z-50">
+            <nav className="fixed top-0 w-full px-6 md:px-20 py-10 flex justify-between items-center z-50 bg-background">
                 <div className="flex items-center gap-2">
                     <Link href="/">
                         <span className="text-brand font-bold tracking-wider text-2xl">
