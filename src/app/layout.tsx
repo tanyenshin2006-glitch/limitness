@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "LIMITNESS — Entry Protocol",
     description: "The protocol begins when you see yourself.",
-    url: "https://limitness.co", // update to your actual domain
+    url: "https://www.limitness.co", // update to your actual domain
     siteName: "LIMITNESS",
     images: [
       {
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  metadataBase: new URL("https://limitness.co"), // replace with real domain
+  metadataBase: new URL("https://www.limitness.co"), // replace with real domain
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
