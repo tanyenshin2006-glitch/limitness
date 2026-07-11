@@ -40,11 +40,11 @@ export default function ProtocolEntry() {
 
             <div className="flex flex-col gap-6 max-w-2xl">
                 <p className="text-white text-lg leading-relaxed">
-                    This isn't a sample. It's a 7-session commitment.
+                    This isn&apos;t a sample. It&apos;s a 7-session commitment.
                 </p>
 
                 <p className="text-white/70 leading-relaxed">
-                    Protocol Entry is not the Controlled Batch 01 waitlist. It's a separate track — a short, structured protocol for those willing to train, take, and observe across 7 sessions before the full release.
+                    Protocol Entry is not the Controlled Batch 01 waitlist. It&apos;s a separate track — a short, structured protocol for those willing to train, take, and observe across 7 sessions before the full release.
                 </p>
 
                 <div className="mt-8">
@@ -56,13 +56,13 @@ export default function ProtocolEntry() {
                 </div>
 
                 <div className="mt-4">
-                    <h2 className="text-white font-bold tracking-wider text-sm mb-4">WHAT'S REQUIRED</h2>
+                    <h2 className="text-white font-bold tracking-wider text-sm mb-4">WHAT&apos;S REQUIRED</h2>
                     <ul className="flex flex-col gap-3">
                         <li className="text-white/70 leading-relaxed">Train with sufficient intensity, each session.</li>
                         <li className="text-white/70 leading-relaxed">Take within 30 minutes post-training, as instructed.</li>
                         <li className="text-white/70 leading-relaxed">Log your response after every session — taste, immediate observation, same-day response, next-day recovery.</li>
                         <li className="text-white/70 leading-relaxed">Keep other conditions steady. No new supplements during the protocol. Keep diet consistent.</li>
-                        <li className="text-white/70 leading-relaxed mt-4">Observe. Don't assume. Response defines use.</li>
+                        <li className="text-white/70 leading-relaxed mt-4">Observe. Don&apos;t assume. Response defines use.</li>
                     </ul>
                 </div>
 

@@ -19,7 +19,7 @@ export default function What() {
                     Clean, considered, no unnecessary fillers.
                 </p>
                 <p className="text-white font-bold font-body tracking-wider mt-4">
-                    Observe. Don't assume. Response defines use.
+                    Observe. Don&apos;t assume. Response defines use.
                 </p>
             </div>
         </main>
