@@ -16,7 +16,7 @@ export default function What() {
                     Most products tell you what to feel. This one asks you to notice.
                 </p>
                 <p className="text-white/70 font-body leading-relaxed">
-                    You're not told. You see for yourself.
+                    You&apos;re not told. You see for yourself.
                 </p>
                 <p className="text-white font-body tracking-wider mt-4">
                     See yourself.

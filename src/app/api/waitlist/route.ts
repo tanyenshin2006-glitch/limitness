@@ -24,7 +24,7 @@ try {
     console.log('Notify email:', d2, e2)
 
         return Response.json({ success: true })
-    } catch (error) {
+    } catch {
         return Response.json({ success: false, error: 'Failed to send email' }, { status: 500 })
     }
 }
