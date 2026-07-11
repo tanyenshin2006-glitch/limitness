@@ -6,6 +6,10 @@ import { Menu } from 'lucide-react';
 import Link from "next/link"
 
 const NAV_LINKS = [
+    { label: "WHAT", href: "/what" },
+    { label: "WHY", href: "/why" },
+    { label: "WHY PROTOCOL", href: "/why-protocol" },
+    { label: "PROTOCOL ENTRY", href: "/protocol-entry" },
     { label: "WAITLIST", href: "/waitlist" },
 ]
 

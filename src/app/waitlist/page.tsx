@@ -15,7 +15,7 @@ const schema = z.object({
 
 type FormData = z.infer<typeof schema>
 
-export default function Homepage() {
+export default function Waitlist() {
 
   const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -35,7 +35,7 @@ export default function Homepage() {
   }
 
   return(
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 md:px-20">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 md:px-20 pt-40 pb-20">
         <p className="font-mono text-xl md:text-3xl text-white tracking-[0.2em]">
             CONTROLLED BATCH 01
         </p>
@@ -111,7 +111,7 @@ export default function Homepage() {
 
             <button 
               type="submit" 
-              className="font-mono mt-6 md:mt-8 px-3 py-2 border border-brand text-brand hover:bg-brand hover:text-black transition-colors duration-[600ms] tracking-wider text-xs md:text-sm cursor-pointer"
+              className="font-mono mt-6 md:mt-8 px-3 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors duration-[600ms] tracking-wider text-xs md:text-sm cursor-pointer"
             >
                 JOIN WAITLIST
             </button>

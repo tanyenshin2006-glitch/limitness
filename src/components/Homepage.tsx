@@ -13,7 +13,7 @@ export default function Homepage() {
       </p>
       <Link href="/waitlist">
         <button
-          className="font-mono mt-8 px-3 py-2 border border-brand text-brand hover:bg-brand hover:text-black transition-colors duration-[600ms] tracking-wider text-sm cursor-pointer"
+          className="font-mono mt-8 px-3 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors duration-[600ms] tracking-wider text-sm cursor-pointer"
         >
           JOIN WAITLIST
         </button>
