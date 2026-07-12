@@ -47,7 +47,7 @@ export default function ProtocolEntry() {
                     Protocol Entry is not the Controlled Batch 01 waitlist. It&apos;s a separate track — a short, structured protocol for those willing to train, take, and observe across 7 sessions before the full release.
                 </p>
 
-                <div className="mt-8">
+                <div className="mt-6">
                     <h2 className="text-white font-bold tracking-wider text-sm mb-4">ENTRY CONDITION</h2>
                     <ul className="flex flex-col gap-2">
                         <li className="text-white/70 leading-relaxed">Use only after meaningful training sessions.</li>
@@ -66,7 +66,7 @@ export default function ProtocolEntry() {
                     </ul>
                 </div>
 
-                <p className="text-white/50 text-sm tracking-wider mt-4">
+                <p className="text-white/50 text-sm tracking-wider mt-2">
                     Applications are reviewed. Not all are accepted.
                 </p>
 
@@ -94,7 +94,7 @@ export default function ProtocolEntry() {
                         className="flex flex-col mt-2"
                         noValidate
                     >
-                        <label className="self-start text-white text-xs tracking-wider mt-4">
+                        <label className="self-start text-white text-xs tracking-wider mt-2">
                             NAME
                         </label>
                         <input
@@ -142,7 +142,7 @@ export default function ProtocolEntry() {
                     </form>
                 )}
 
-                <p className="text-white tracking-wider mt-8">
+                <p className="text-white tracking-wider mt-6">
                     See yourself.
                 </p>
             </div>
