@@ -36,7 +36,7 @@ export default function IntroSequence({ children }: { children: React.ReactNode 
         className="absolute font-body text-foreground text-lg sm:text-2xl tracking-[0.2rem] opacity-0"
         style={{ animation: "intro-sub 1.2s ease-in-out 1.9s forwards" }}
       >
-        See Yourself.
+        See yourself.
       </div>
     </div>
   )
