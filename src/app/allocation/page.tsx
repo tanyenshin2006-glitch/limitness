@@ -113,7 +113,7 @@ export default function Waitlist() {
               type="submit" 
               className="font-mono mt-6 md:mt-8 px-3 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors duration-[600ms] tracking-wider text-xs md:text-sm cursor-pointer"
             >
-                JOIN WAITLIST
+                REQUEST ACCESS
             </button>
           </form>
         )}

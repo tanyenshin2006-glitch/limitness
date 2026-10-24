@@ -10,7 +10,7 @@ const NAV_LINKS = [
     { label: "WHY", href: "/why" },
     { label: "WHY PROTOCOL", href: "/why-protocol" },
     { label: "PROTOCOL ENTRY", href: "/protocol-entry" },
-    { label: "WAITLIST", href: "/waitlist" },
+    { label: "ALLOCATION", href: "/allocation" },
 ]
 
 export default function NavigationMenu() {
