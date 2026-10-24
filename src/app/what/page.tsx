@@ -13,7 +13,7 @@ export default function What() {
                     One sachet, mixed with water, within 30 minutes post-training.
                 </p>
                 <p className="text-white/70 font-body leading-relaxed">
-                    Controlled Batch 01 is the first release. Entry is via waitlist.
+                    Controlled Batch 01 allocation active. Request access to enter the queue.
                 </p>
                 <p className="text-white/70 font-body leading-relaxed">
                     Clean, considered, no unnecessary fillers.
