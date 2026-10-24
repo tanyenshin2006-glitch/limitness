@@ -137,7 +137,7 @@ export default function ProtocolEntry() {
                             type="submit"
                             className="font-mono mt-6 md:mt-8 self-start px-8 py-3 border border-white text-white hover:bg-white hover:text-black transition-colors duration-[600ms] tracking-wider text-xs md:text-sm cursor-pointer"
                         >
-                            APPLY FOR PROTOCOL ENTRY
+                            INITIATE ENTRY
                         </button>
                     </form>
                 )}
