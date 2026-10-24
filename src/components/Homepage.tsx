@@ -11,11 +11,11 @@ export default function Homepage() {
       <p className="font-body mt-6 text-sm md:text-base text-white/60 tracking-[0.15em]">
           Designed for post-training recovery.
       </p>
-      <Link href="/waitlist">
+      <Link href="/allocation">
         <button
           className="font-mono mt-8 px-3 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors duration-[600ms] tracking-wider text-sm cursor-pointer"
         >
-          JOIN WAITLIST
+          REQUEST ACCESS
         </button>
       </Link>
     </section>
